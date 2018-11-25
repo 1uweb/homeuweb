@@ -1,0 +1,29 @@
+{
+  "name": "homeuweb",
+  "version": "0.0.1",
+  "description": "Website für mich selber!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1uweb/homeuweb.git"
+  },
+  "author": "Uwe Barthel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1uweb/homeuweb/issues"
+  },
+  "homepage": "https://github.com/1uweb/homeuweb#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.10.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
