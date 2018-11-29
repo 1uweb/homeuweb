@@ -3,6 +3,7 @@ import NextHead from 'next/head'
 import css from '../static/main.sass'
 import HeadTag from '../components/head'
 import Navigation from '../components/header'
+import Particles from 'react-particles-js'
 
 const Index = () => (
     <div className="root">
@@ -35,9 +36,52 @@ const Index = () => (
         </NextHead>
         <Navigation></Navigation>
         <main className="app-root">
-            <section className="hero-app">
+            <section className="hero-app fadein-image">
                 <div className="wrapper">
-                    <h1></h1>
+                    <div className="case-hero">
+                        <h1 className="fadein">Webdesign aus Leidenschaft</h1>
+                        <h2 className="fadein">Made in Augustusburg</h2>
+                    </div>
+                </div>
+            </section>
+            <section className="frame about">
+                <div className="wrapper">
+                    <h1>Ein Hobby das Spaß macht</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vulputate vulputate. Suspendisse felis justo, scelerisque eu semper et, auctor ac dolor. Quisque et neque imperdiet, dignissim elit eget, volutpat justo. Maecenas a porta erat. Nam id molestie leo. Integer condimentum ante ex, non facilisis lacus finibus quis. Fusce ut iaculis risus. Donec eget auctor nisl, sed hendrerit nulla. Aliquam erat volutpat. Integer ipsum ligula, pulvinar sed libero nec, luctus ornare erat. Pellentesque congue massa quis urna iaculis faucibus. Praesent eget pretium ante, sit amet suscipit augue. Integer ex est, pulvinar sed volutpat at, vehicula ac ante. Suspendisse id suscipit lectus. </p>
+                    <Link href="/ueber"><a>Mehr Erfahren → </a></Link>
+                </div>
+            </section>
+            <section className="frame-2 portfolio">
+                <div className="wrapper">
+                    <h1>Klein aber Fein</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis vulputate vulputate. Suspendisse felis justo, scelerisque eu semper et, auctor ac dolor. Quisque et neque imperdiet, dignissim elit eget, volutpat justo. Maecenas a porta erat. Nam id molestie leo. Integer condimentum ante ex, non facilisis lacus finibus quis. Fusce ut iaculis risus. Donec eget auctor nisl, sed hendrerit nulla. Aliquam erat volutpat. Integer ipsum ligula, pulvinar sed libero nec, luctus ornare erat. Pellentesque congue massa quis urna iaculis faucibus. Praesent eget pretium ante, sit amet suscipit augue. Integer ex est, pulvinar sed volutpat at, vehicula ac ante. Suspendisse id suscipit lectus. </p>
+                    <Link href="/ueber"><a>Mehr Erfahren → </a></Link>
+                </div>
+            </section>
+            <section className="frame about">
+                <div className="wrapper">
+                    <h1>Ein Hobby das Spaß macht</h1>
+                    <ul className="news-grid">
+                        <li>
+                            <Link href="#"><a><div className="news-home">
+                                <h3>Willkommen</h3>
+                                <div className="img-home"></div>
+                            </div></a></Link>
+                        </li>
+                        <li>
+                            <Link href="#"><a><div className="news-home">
+                                <h3>Willkommen</h3>
+                                <div className="img-home"></div>
+                            </div></a></Link>
+                        </li>
+                        <li>
+                            <Link href="#"><a><div className="news-home">
+                                <h3>Willkommen</h3>
+                                <div className="img-home"></div>
+                            </div></a></Link>
+                        </li>
+                    </ul>
+                    <Link href="/ueber"><a>Mehr Erfahren → </a></Link>
                 </div>
             </section>
         </main>
